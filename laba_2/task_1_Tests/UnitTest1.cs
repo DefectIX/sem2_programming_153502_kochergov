@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using task_1;
 
 namespace task_1_Tests
 {
@@ -10,9 +11,9 @@ namespace task_1_Tests
 		[InlineData(50, false)]
 		[InlineData(51, true)]
 		[InlineData(99, true)]
-		public void Test1lIsSumOfDigitsEven_Test(int a, bool expected)
+		public void Test1_IsSumOfDigitsEven(int a, bool expected)
 		{
-			Assert.Equal(task_1.Program.IsSumOfDigitsEven(a), expected);
+			Assert.Equal(Program.IsSumOfDigitsEven(a), expected);
 		}
 	}
 }
