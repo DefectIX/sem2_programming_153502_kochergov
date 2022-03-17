@@ -8,12 +8,27 @@ namespace task_1_Tests
 	{
 		[Theory]
 		[InlineData(10, false)]
-		[InlineData(50, false)]
-		[InlineData(51, true)]
-		[InlineData(99, true)]
-		public void Test1_IsSumOfDigitsEven(int a, bool expected)
+		[InlineData(11, true)]
+		public void Test1_IsSumOfDigitsEven_MinValue(int a, bool expected)
 		{
 			Assert.Equal(Program.IsSumOfDigitsEven(a), expected);
 		}
+
+		[Theory]
+		[InlineData(98, false)]
+		[InlineData(99, true)]
+		public void Test1_IsSumOfDigitsEven_MaxValue(int a, bool expected)
+		{
+			Assert.Equal(Program.IsSumOfDigitsEven(a), expected);
+		}
+
+		[Theory]
+		[InlineData(50, false)]
+		[InlineData(51, true)]
+		public void Test1_IsSumOfDigitsEven_MiddleValue(int a, bool expected)
+		{
+			Assert.Equal(Program.IsSumOfDigitsEven(a), expected);
+		}
+
 	}
 }
