@@ -11,7 +11,7 @@ namespace task_1_Tests
 		[InlineData(11, true)]
 		public void Test1_IsSumOfDigitsEven_MinValue(int a, bool expected)
 		{
-			Assert.Equal(Program.IsSumOfDigitsEven(a), expected);
+			Assert.Equal(expected, Program.IsSumOfDigitsEven(a));
 		}
 
 		[Theory]
@@ -19,7 +19,7 @@ namespace task_1_Tests
 		[InlineData(99, true)]
 		public void Test1_IsSumOfDigitsEven_MaxValue(int a, bool expected)
 		{
-			Assert.Equal(Program.IsSumOfDigitsEven(a), expected);
+			Assert.Equal(expected, Program.IsSumOfDigitsEven(a));
 		}
 
 		[Theory]
@@ -27,7 +27,7 @@ namespace task_1_Tests
 		[InlineData(51, true)]
 		public void Test1_IsSumOfDigitsEven_MiddleValue(int a, bool expected)
 		{
-			Assert.Equal(Program.IsSumOfDigitsEven(a), expected);
+			Assert.Equal(expected, Program.IsSumOfDigitsEven(a));
 		}
 
 	}
