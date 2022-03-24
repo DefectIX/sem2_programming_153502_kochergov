@@ -28,8 +28,8 @@ namespace test_task_2
 
 
 		[Theory]
-		[InlineData(8, 5, 1e3-1, 2, 899100.0007001715)]
-		[InlineData(100, 10-1, 1e3-1, 2, 899100.0007001715)]
+		[InlineData(8, 5, 1e3-1, 2, 39960.00070017143)]
+		[InlineData(8, 50, 1e2-1, 1, 497.55803681580704)]
 		public void Y_Test__Mid(int a, int b, int z, int expectedBranch, double expected)
 		{
 			int actualBranch;
