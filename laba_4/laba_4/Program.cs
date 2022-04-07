@@ -8,10 +8,13 @@ namespace laba_4
 		static void Main(string[] args)
 		{
 			var department = HRDepartment.Instance;
+
 			department.CompanyName = "SpaceX";
 			department.IncomeTax = 0.2;
 			department.PaymentPerHour = 1000;
-			department.QuotaHoursPerMonth = new ProductionQuota(20);
+			department.QuotaHoursPerMonth = new ProductionQuota(10);
+			department.QuotaHoursPerMonth.IncreaseHoursBy(20);
+			department.QuotaHoursPerMonth.DecreaseHoursBy(10);
 			department.WorkersNumber = 50;
 			Console.WriteLine($"Company name: {department.CompanyName}\n" +
 			                  $"Workers number: {department.WorkersNumber}\n" +
@@ -30,6 +33,7 @@ namespace laba_4
 				HRDepartment.Parse(reader.ReadToEnd());
 			}
 
+			department = HRDepartment.Instance;
 			Console.Write("\n\n\n");
 			Console.WriteLine($"Company name: {department.CompanyName}\n" +
 			                  $"Workers number: {department.WorkersNumber}\n" +

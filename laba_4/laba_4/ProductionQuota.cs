@@ -27,7 +27,7 @@ namespace laba_4
 
 		public void DecreaseHoursBy(long value)
 		{
-			HoursPerMonth += value;
+			HoursPerMonth -= value;
 		}
 
 		public override string ToString()
