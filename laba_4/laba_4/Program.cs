@@ -22,18 +22,11 @@ namespace laba_4
 			                  $"Income tax: {department.IncomeTax}\n" +
 			                  $"Quota hours per month: {department.QuotaHoursPerMonth}\n"+
 			                  $"Tax payment per month: {department.TaxPaymentPerMonth()}");
-			using (StreamWriter writer = new StreamWriter(@"C:\Department\department_output.txt"))
-			{
-				writer.Write(department.ToString());
-			}
 
+			department.SaveToFile(@"C:\Department\department_output.txt");
 
-			using (StreamReader reader = new StreamReader(@"C:\Department\department_input.txt"))
-			{
-				HRDepartment.Parse(reader.ReadToEnd());
-			}
+			department.LoadFromFile(@"C:\Department\department_input.txt");
 
-			department = HRDepartment.Instance;
 			Console.Write("\n\n\n");
 			Console.WriteLine($"Company name: {department.CompanyName}\n" +
 			                  $"Workers number: {department.WorkersNumber}\n" +

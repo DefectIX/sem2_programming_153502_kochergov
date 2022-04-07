@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,5 +51,22 @@ namespace laba_4
 		{
 			return $"{CompanyName}\n{WorkersNumber}\n{PaymentPerHour}\n{IncomeTax}\n{QuotaHoursPerMonth}";
 		}
+
+		public void SaveToFile(string path)
+		{
+			using (StreamWriter writer = new StreamWriter(path))
+			{
+				writer.Write(Instance.ToString());
+			}
+		}
+
+		public void LoadFromFile(string path)
+		{
+			using (StreamReader reader = new StreamReader(path))
+			{
+				Parse(reader.ReadToEnd());
+			}
+		}
+
 	}
 }
