@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace laba_5
 {
-	class Work
+	public class Work
 	{
 		public enum WorkType
 		{

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace laba_5
 {
-	class PayrollDepartment
+	public class PayrollDepartment
 	{
 		private List<Employee> LstEmployees { get; set; } = new List<Employee>();
 		private List<Work> LstWorks { get; set; } = new List<Work>();
