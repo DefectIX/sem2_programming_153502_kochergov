@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="laba_5.PayrollDepartment">
+    <Position X="4.25" Y="1" Width="2" />
+    <AssociationLine Name="LstEmployees" Type="laba_5.Employee" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="2.873" />
+        <Point X="5.25" Y="4.438" />
+        <Point X="6.5" Y="4.438" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAEAAAASAAIAAAIAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>PayrollDepartment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="LstEmployees" />
+      <Property Name="LstWorks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="laba_5.Employee">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <AssociationLine Name="LstWorksOfEmployee" Type="laba_5.Work" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.125" Y="3.5" />
+        <Point X="7.125" Y="2.5" />
+        <Point X="9.25" Y="2.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAQAAAAACAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="LstWorksOfEmployee" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="laba_5.Work">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="laba_5.Work.WorkType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Work.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Work.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
