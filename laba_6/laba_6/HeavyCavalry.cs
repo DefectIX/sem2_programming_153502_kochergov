@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace laba_6
 {
-	sealed class HeavyCavalry : Cavalry
+	public sealed class HeavyCavalry : Cavalry
 	{
 		public HeavyCavalry()
 		{
