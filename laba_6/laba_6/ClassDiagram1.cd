@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="laba_6.ArmyUnit">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAQAAgAAAAAAABAAAgAAAgAQAAAAAAAAAA=</HashCode>
+      <FileName>ArmyUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="laba_6.HeavyCavalry">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <InheritanceLine Type="laba_6.Cavalry" ManuallyRouted="true">
+      <Path>
+        <Point X="10.25" Y="2.213" />
+        <Point X="11" Y="2.213" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HeavyCavalry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="laba_6.Cavalry">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAQAAAAAAAAAAAAAAAAAAgAQAAAAAAAAAA=</HashCode>
+      <FileName>Cavalry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="laba_6.Infantry">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Infantry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

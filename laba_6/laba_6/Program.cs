@@ -27,7 +27,7 @@ namespace laba_6
 			Console.WriteLine(((Cavalry)cavalry).IsHeavyCavalry());
 			Console.Write("\n\n");
 
-			Console.WriteLine(((HeavyCavalry)heavyCavalry).IsHeavyCavalry());
+			Console.WriteLine(((Cavalry)heavyCavalry).IsHeavyCavalry());
 			Console.Write("\n\n");
 
 			infantry.IncreaseAttackStrength(50);
