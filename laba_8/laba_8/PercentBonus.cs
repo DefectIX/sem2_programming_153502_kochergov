@@ -8,20 +8,20 @@ using System.Threading.Tasks;
 
 namespace laba_8
 {
-	public class AbsBonus : IPayment
+	public class PercentBonus : IPayment
 	{
-		public AbsBonus(long payment, long bonus)
+		public PercentBonus(double payment, double bonus)
 		{
 			_payment = payment;
 			_bonus = bonus;
 		}
 
-		private long _payment;
-		private long _bonus;
+		private double _payment;
+		private double _bonus;
 
-		public long GetPayment()
+		public double GetPayment()
 		{
-			return _payment + _bonus;
+			return _payment * (1 + _bonus * 0.01);
 		}
 	}
 }

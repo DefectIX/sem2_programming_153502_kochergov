@@ -8,6 +8,6 @@ namespace laba_8
 {
 	interface IPayment
 	{
-		long GetPayment();
+		double GetPayment();
 	}
 }

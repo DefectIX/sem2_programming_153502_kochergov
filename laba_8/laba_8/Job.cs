@@ -19,7 +19,7 @@ namespace laba_8
 		public string Name { get; set; }
 		private IPayment _payment;
 		
-		public long GetPayment()
+		public double GetPayment()
 		{
 			return _payment.GetPayment();
 		}

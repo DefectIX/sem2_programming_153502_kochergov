@@ -15,14 +15,14 @@ namespace laba_8
 			lstJobs = new List<Job>();
 		}
 
-		public void AddJobWithNoBonus(string name, long payment)
+		public void AddJobWithNoBonus(string name, double payment)
 		{
 			lstJobs.Add(new Job(name, new NoBonus(payment)));
 		}
 
-		public void AddJobWithAbsBonus(string name, long payment, long absBonus)
+		public void AddJobWithPercentBonus(string name, double payment, double percentBonus)
 		{
-			lstJobs.Add(new Job(name, new AbsBonus(payment, absBonus)));
+			lstJobs.Add(new Job(name, new PercentBonus(payment, percentBonus)));
 		}
 
 		public double GetAveragePayment()

@@ -10,14 +10,14 @@ namespace laba_8
 {
 	public class NoBonus : IPayment
 	{
-		public NoBonus(long payment)
+		public NoBonus(double payment)
 		{
 			_payment = payment;
 		}
 
-		private long _payment;
+		private double _payment;
 
-		public long GetPayment()
+		public double GetPayment()
 		{
 			return _payment;
 		}
