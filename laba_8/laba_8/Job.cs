@@ -19,9 +19,9 @@ namespace laba_8
 		public string Name { get; set; }
 		private IPayment _payment;
 		
-		public double GetPayment()
+		public double GetPayment(bool mustIgnoreBonus = false)
 		{
-			return _payment.GetPayment();
+			return _payment.GetPayment(mustIgnoreBonus);
 		}
 	}
 }

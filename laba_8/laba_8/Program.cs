@@ -11,6 +11,7 @@ namespace laba_8
 			department.AddJobWithNoBonus("Job 2", 50);
 			department.AddJobWithPercentBonus("Job 3", 100, 50);
 			Console.WriteLine("Average payment: " + department.GetAveragePayment());
+			Console.WriteLine("Average payment without bonus: " + department.GetAveragePaymentWithoutBonus());
 		}
 	}
 }

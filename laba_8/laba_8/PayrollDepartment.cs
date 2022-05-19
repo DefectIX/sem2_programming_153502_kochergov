@@ -36,5 +36,18 @@ namespace laba_8
 			}
 			return sum / lstJobs.Count;
 		}
+
+		public double GetAveragePaymentWithoutBonus()
+		{
+			if (lstJobs.Count == 0)
+				return 0;
+			double sum = 0;
+			foreach (var job in lstJobs)
+			{
+				sum += job.GetPayment(true);
+			}
+			return sum / lstJobs.Count;
+		}
+
 	}
 }

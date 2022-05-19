@@ -19,8 +19,10 @@ namespace laba_8
 		private double _payment;
 		private double _bonus;
 
-		public double GetPayment()
+		public double GetPayment(bool mustIgnoreBonus)
 		{
+			if (mustIgnoreBonus)
+				return _payment;
 			return _payment * (1 + _bonus * 0.01);
 		}
 	}

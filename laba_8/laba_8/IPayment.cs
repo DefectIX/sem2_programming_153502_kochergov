@@ -8,6 +8,6 @@ namespace laba_8
 {
 	interface IPayment
 	{
-		double GetPayment();
+		double GetPayment(bool mustIgnoreBonus = false);
 	}
 }

@@ -17,7 +17,7 @@ namespace laba_8
 
 		private double _payment;
 
-		public double GetPayment()
+		public double GetPayment(bool mustIgnoreBonus)
 		{
 			return _payment;
 		}
