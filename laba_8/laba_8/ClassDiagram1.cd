@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="laba_8.PayrollDepartment">
-    <Position X="3" Y="3.25" Width="1.5" />
+    <Position X="3" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAgAAAAAAAAIAIAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AACCAAAAAAAAAAAAAAAAAAAAAAIAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>PayrollDepartment.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -11,7 +11,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="laba_8.Job">
-    <Position X="5.5" Y="3.25" Width="1.5" />
+    <Position X="5.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAIAAAYAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Job.cs</FileName>
@@ -21,23 +21,23 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="laba_8.NoBonus" BaseTypeListCollapsed="true">
-    <Position X="6.75" Y="5.75" Width="1.5" />
+    <Position X="6.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAIAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>NoBonus.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="laba_8.AbsBonus" BaseTypeListCollapsed="true">
-    <Position X="4.75" Y="5.75" Width="1.5" />
+  <Class Name="laba_8.PercentBonus" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAAAAAAAIAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AbsBonus.cs</FileName>
+      <FileName>PercentBonus.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.231" />
   </Class>
   <Interface Name="laba_8.IPayment">
-    <Position X="8" Y="3.5" Width="1.5" />
+    <Position X="8" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IPayment.cs</FileName>
