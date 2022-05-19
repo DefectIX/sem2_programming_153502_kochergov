@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace laba_8
 {
-	class PayrollDepartment
+	public class PayrollDepartment
 	{
 		private List<Job> lstJobs;
 
@@ -27,6 +27,8 @@ namespace laba_8
 
 		public double GetAveragePayment()
 		{
+			if (lstJobs.Count == 0)
+				return 0;
 			double sum = 0;
 			foreach (var job in lstJobs)
 			{

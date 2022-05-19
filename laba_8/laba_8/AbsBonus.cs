@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace laba_8
 {
-	class AbsBonus : IPayment
+	public class AbsBonus : IPayment
 	{
 		public AbsBonus(long payment, long bonus)
 		{
